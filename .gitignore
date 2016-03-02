@@ -13,3 +13,7 @@ tags
 build/
 work/
 output/
+
+# add specific entries for binaries
+helloworld
+
