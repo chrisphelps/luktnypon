@@ -1,21 +1,21 @@
 primitive Neigh
-  fun apply(): String => "NEIGH"
+  fun apply(): String => "Neigh"
   fun ord(): U8 => 0
-primitive Naigh
-  fun apply(): String => "NAIGH"
+primitive Whinny
+  fun apply(): String => "Whinny"
   fun ord(): U8 => 1
-primitive Neeigh
-  fun apply(): String => "NEEIGH"
+primitive Chuff
+  fun apply(): String => "Chuff"
   fun ord(): U8 => 2
-primitive Naaigh
-  fun apply(): String => "NAAIGH"
+primitive Groan
+  fun apply(): String => "Groan"
   fun ord(): U8 => 3
 
-type NeighEntry is (Neigh | Naigh | Neeigh | Naaigh)
+type NeighEntry is (Neigh | Whinny | Chuff | Groan)
 
 primitive NeighEntryList
   fun tag apply(): Array[NeighEntry] =>
-    [Neigh, Naigh, Neeigh, Naaigh]
+    [Neigh, Whinny, Chuff, Groan]
   fun tag find(v: String): NeighEntry? =>
     for n in NeighEntryList().values() do
       if v == n() then
@@ -75,7 +75,7 @@ actor StringEncoder
   be write(b: U8) =>
     try
       append(NeighEntryList()(b.u64())())
-      append("! ")
+      append(" ")
     end
 
   be display(env: Env) => env.out.print("Result: "+result)
@@ -87,23 +87,17 @@ actor StringDecoder
 
   fun ref append(b: U8) => result.push(b)
 
-  fun ref getResult(): String? =>
+  fun ref getResult(): String =>
     var res = String(result.size())
-    var idx:U64 = 0
+    var idx:I64 = 0
     for c in result.values() do
-      res.append(" ")
-      res.update(idx,c)
+      res.insert_byte(idx,c)
       idx = idx + 1
     end
     res.string()
 
   be write(b: U8) => append(b)
-  be display(env: Env) =>
-    try
-      env.out.print("Result: "+getResult())
-    else
-      env.out.print("ERROR printing!")
-    end
+  be display(env: Env) => env.out.print("Result: "+getResult())
 
 primitive NeighEncoder
   fun encode(input: String, out: EncoderResult tag) =>
