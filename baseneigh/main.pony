@@ -18,31 +18,48 @@ actor Main
     try
       let inputString: String = env.args(1)
       env.out.print("Encoding: "+inputString)
-      for n in NeighEntryList().values() do
-        env.out.print("Entry "+n())
-      end
-      NeighEncoder.encode(inputString, DisplayNeigh(env))
+      //for n in NeighEntryList().values() do
+      //  env.out.print("Entry "+n())
+      //end
+      let r = StringNeigh
+      NeighEncoder.encode(inputString, r)
+      r.display(env)
     else
       env.out.print("Why you no give param")
     end
 
 interface EncoderResult
-  fun write(b: U8)
+  be write(b: U8)
 
-class DisplayNeigh
+actor DisplayNeigh
   let env: Env
   new create(env': Env) =>
     env = env'
-  fun write(b: U8) =>
+  be write(b: U8) =>
     try
       env.out.print(NeighEntryList()(b.u64())() + "! ")
     else
       env.out.print("Come on! Cannot convert U8 to U64?!?")
     end
 
+actor StringNeigh
+  var result: String ref = recover String end
+
+  new create() => None
+
+  fun ref append(h: String) => result.append(h)
+
+  be write(b: U8) =>
+    try
+      append(NeighEntryList()(b.u64())())
+      append("! ")
+    end
+
+  be display(env: Env) => env.out.print("Result: "+result)
+
 
 primitive NeighEncoder
-  fun encode(input: String, out: EncoderResult box) =>
+  fun encode(input: String, out: EncoderResult tag) =>
     for i in input.values() do
       let da: Array[U8] = [0,2,4,6]
       for d in da.values() do
@@ -50,3 +67,4 @@ primitive NeighEncoder
         out.write(b)
       end
     end
+
