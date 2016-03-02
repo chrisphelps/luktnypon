@@ -34,7 +34,11 @@ class DisplayNeigh
   new create(env': Env) =>
     env = env'
   fun write(b: U8) =>
-    env.out.print("..."+b.string())
+    try
+      env.out.print(NeighEntryList()(b.u64())() + "! ")
+    else
+      env.out.print("Come on! Cannot convert U8 to U64?!?")
+    end
 
 
 primitive NeighEncoder
