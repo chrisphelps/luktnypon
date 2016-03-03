@@ -3,6 +3,7 @@ use "collections"
 use "net/http"
 use "net/ssl"
 use "json"
+use "../packages/jsonpath"
 
 actor Main
   let _env: Env
@@ -30,6 +31,7 @@ actor Main
         let s = "https://api.giphy.com/v1/gifs/translate?api_key=dc6zaTOxFJmzC&fmt=json&rating=y&s=" + env.args(i) + "%20pony"
         let url = URL.build(s)
         Fact(url.host.size() > 0)
+        _env.out.print("Gonna request " + s)
 
         let req = Payload.request("GET", url, recover this~apply() end)
         _client(consume req)
@@ -39,6 +41,7 @@ actor Main
     end
 
   be apply(request: Payload val, response: Payload val) =>
+    _env.out.print("Got response")
     if response.status != 0 then
       // TODO: aggregate as a single print
       _env.out.print(
@@ -55,81 +58,45 @@ actor Main
       _env.out.print("")
 
       var jsonResponse = ""
-
       for chunk in response.body().values() do
         _env.out.print(chunk) // chunk is a ByteSeq
-
-        //blergh = chunk.toString()
-        //_env.out.write(blergh)
-
         for i in Range(0, chunk.size()) do
           try
             let c = chunk(i)
             let c2 = String.from_utf32(c.u32())
-            // _env.out.write("Current char: " + c2)
             jsonResponse = jsonResponse + c2
           end
         end
-
-        // let c : Pointer[U8] ref = chunk.cstring()
-
-
-        // jsonResponse = jsonResponse
-
-        _env.out.print("Our jsonResponse: " + jsonResponse)        
-
-        let json: JsonDoc = JsonDoc
-        try
-          json.parse(jsonResponse)
-
-          _env.out.print("HERE!!!!!")
-
-          match json.data 
-          | let o: JsonObject => 
-            _env.out.print("THE JSON DOC PARSED: " + o.string())
-
-
-            for k in o.data.keys() do
-              _env.out.print("GGGGGG: " + k)
-            end
-
-            try
-              match o.data("data")
-              | let o2: JsonObject => 
-                _env.out.print("THE JSON DATA PARSED: " + o2.string())
-
-              try
-                match o2.data("embed_url")
-                | let o3: String =>  _env.out.print("What we actually want: " + o3)
-                end
-              else
-                _env.out.print("Not a String!")  
-              end
-            end
-
-            else
-              _env.out.print("No embed_url!")  
-            end
-
-
-            // let giphyUrl = o.data("embed_url") as String
-            // _env.out.print("The Giphy URL: " + giphyUrl)
-          else
-            _env.out.print("Shit")
-          end
-          // let x1 = json.data as JsonObject
-          // _env.out.print("THE JSON DOC PARSED: " + x1.string())
-        end
-
-
-        
-
       end
 
-      // _env.out.print("THE JSON RESPONSE: " + jsonResponse)
+      _env.out.print("Our jsonResponse: " + jsonResponse)
 
-      _env.out.print("")
+      var eu = ""
+      let json: JsonDoc = JsonDoc
+      try
+        json.parse(jsonResponse)
+        _env.out.print("Parsed Doc")
 
-    else
-      _env.out.print("Failed: " + request.method + " " + request.url.string())
+        let jp = JsonPath.obj("data").obj("bitly_gif_url")
+        eu = jp.string(json)
+      end
+
+      let token = "xoxp-16403402883-16552290308-23955244178-3e1b136b9e"
+      let channel = "C0PU3PR62" //"%23luktnypon"
+      let name = "AppleJack"
+
+      try
+        let s = "https://slack.com/api/chat.postMessage?token=" + token +
+          "&username=" + name +
+          "&pretty=1" +
+          "&channel=" + channel +
+          "&text=" + eu
+        let url = URL.build(s)
+
+        let req = Payload.request("GET", url, recover this~apply2() end)
+        _client(consume req)
+      end
     end
+
+  be apply2(request: Payload val, response: Payload val) =>
+    None
