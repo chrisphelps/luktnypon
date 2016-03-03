@@ -1,0 +1,309 @@
+Applejack starting...
+Applejack started.
+HTTP/1.1 200 OK
+Age: 0
+Access-Control-Allow-Credentials: true
+Content-Length: 3888
+Connection: keep-alive
+Set-Cookie: __cfduid=da3f62d2c1b2ebefc017a49ef1dd0daeb1456958954; expires=Thu, 02-Mar-17 22:49:14 GMT; path=/; domain=.giphy.com; HttpOnly
+Cf-Railgun: 8c03fd8362 stream 0.000000 0210 5f99
+Access-Control-Allow-Headers: Content-Type, Accept, x-requested-with, cache-control
+Accept-Ranges: bytes
+Date: Wed, 02 Mar 2016 22:49:15 GMT
+Access-Control-Allow-Origin: *
+X-Robots-Tag: noindex
+Server: cloudflare-nginx
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+CF-RAY: 27d8669baf430104-DFW
+Vary: Accept-Encoding
+Content-Type: application/json
+
+Here is the output from gliphy
+
+{"data":{"type":"gif","id":"45cq3Gn0GH7k4","slug":"sad-crying-alone-45cq3Gn0GH7k4","url":"https:\/\/giphy.com\/gifs\/sad-crying-alone-45cq3Gn0GH7k4","bitly_gif_url":"http:\/\/gph.is\/1cK14ir","bitly_url":"http:\/\/gph.is\/1cK14ir","embed_url":"https:\/\/giphy.com\/embed\/45cq3Gn0GH7k4","username":"","source":"http:\/\/welcometo1dandmileyhouse.tumblr.com\/post\/71038654765\/kocham-ci","rating":"y","content_url":"","source_tld":"welcometo1dandmileyhouse.tumblr.com","source_post_url":"http:\/\/welcometo1dandmileyhouse.tumblr.com\/post\/71038654765\/kocham-ci","import_datetime":"2014-01-02 10:10:29","trending_datetime":"1970-01-01 00:00:00","images":{"fixed_height":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200.gif","width":"336","height":"200","size":"65701","mp4":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200.mp4","mp4_size":"7277","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200.webp","webp_size":"62080"},"fixed_height_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200_s.gif","width":"336","height":"200"},"fixed_height_downsampled":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200_d.gif","width":"336","height":"200","size":"226906","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200_d.webp","webp_size":"62080"},"fixed_width":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w.gif","width":"200","height":"119","size":"25815","mp4":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w.mp4","mp4_size":"8257","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w.webp","webp_size":"29386"},"fixed_width_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w_s.gif","width":"200","height":"119"},"fixed_width_downsampled":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w_d.gif","width":"200","height":"119","size":"91862","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w_d.webp","webp_size":"29386"},"fixed_height_small":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100.gif","width":"168","height":"100","size":"65701","mp4":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100.mp4","mp4_size":"41209","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100.webp","webp_size":"22486"},"fixed_height_small_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100_s.gif","width":"168","height":"100"},"fixed_width_small":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100w.gif","width":"100","height":"59","size":"25815","mp4":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100w.mp4","mp4_size":"20208","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100w.webp","webp_size":"9860"},"fixed_width_small_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100w_s.gif","width":"100","height":"59"},"downsized":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.gif","width":"355","height":"211","size":"246429"},"downsized_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy_s.gif","width":"355","height":"211"},"downsized_large":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.gif","width":"355","height":"211","size":"246429"},"downsized_medium":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.gif","width":"355","height":"211","size":"246429"},"original":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.gif","width":"355","height":"211","size":"246429","frames":"5","mp4":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.mp4","mp4_size":"28720","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.webp","webp_size":"66160"},"original_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy_s.gif","width":"355","height":"211"},"looping":{"mp4":"https:\/\/media.giphy.com\/media\/45cq3Gn0GH7k4\/giphy-loop.mp4"}}},"meta":{"status":200,"msg":"OK"}}
+Our jsonResponse: {"data":{"type":"gif","id":"45cq3Gn0GH7k4","slug":"sad-crying-alone-45cq3Gn0GH7k4","url":"https:\/\/giphy.com\/gifs\/sad-crying-alone-45cq3Gn0GH7k4","bitly_gif_url":"http:\/\/gph.is\/1cK14ir","bitly_url":"http:\/\/gph.is\/1cK14ir","embed_url":"https:\/\/giphy.com\/embed\/45cq3Gn0GH7k4","username":"","source":"http:\/\/welcometo1dandmileyhouse.tumblr.com\/post\/71038654765\/kocham-ci","rating":"y","content_url":"","source_tld":"welcometo1dandmileyhouse.tumblr.com","source_post_url":"http:\/\/welcometo1dandmileyhouse.tumblr.com\/post\/71038654765\/kocham-ci","import_datetime":"2014-01-02 10:10:29","trending_datetime":"1970-01-01 00:00:00","images":{"fixed_height":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200.gif","width":"336","height":"200","size":"65701","mp4":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200.mp4","mp4_size":"7277","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200.webp","webp_size":"62080"},"fixed_height_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200_s.gif","width":"336","height":"200"},"fixed_height_downsampled":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200_d.gif","width":"336","height":"200","size":"226906","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200_d.webp","webp_size":"62080"},"fixed_width":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w.gif","width":"200","height":"119","size":"25815","mp4":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w.mp4","mp4_size":"8257","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w.webp","webp_size":"29386"},"fixed_width_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w_s.gif","width":"200","height":"119"},"fixed_width_downsampled":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w_d.gif","width":"200","height":"119","size":"91862","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/200w_d.webp","webp_size":"29386"},"fixed_height_small":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100.gif","width":"168","height":"100","size":"65701","mp4":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100.mp4","mp4_size":"41209","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100.webp","webp_size":"22486"},"fixed_height_small_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100_s.gif","width":"168","height":"100"},"fixed_width_small":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100w.gif","width":"100","height":"59","size":"25815","mp4":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100w.mp4","mp4_size":"20208","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100w.webp","webp_size":"9860"},"fixed_width_small_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/100w_s.gif","width":"100","height":"59"},"downsized":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.gif","width":"355","height":"211","size":"246429"},"downsized_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy_s.gif","width":"355","height":"211"},"downsized_large":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.gif","width":"355","height":"211","size":"246429"},"downsized_medium":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.gif","width":"355","height":"211","size":"246429"},"original":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.gif","width":"355","height":"211","size":"246429","frames":"5","mp4":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.mp4","mp4_size":"28720","webp":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy.webp","webp_size":"66160"},"original_still":{"url":"https:\/\/media2.giphy.com\/media\/45cq3Gn0GH7k4\/giphy_s.gif","width":"355","height":"211"},"looping":{"mp4":"https:\/\/media.giphy.com\/media\/45cq3Gn0GH7k4\/giphy-loop.mp4"}}},"meta":{"status":200,"msg":"OK"}}
+HERE!!!!!
+THE JSON DOC PARSED: {
+  "data": {
+    "slug": "sad-crying-alone-45cq3Gn0GH7k4",
+    "rating": "y",
+    "bitly_url": "http://gph.is/1cK14ir",
+    "import_datetime": "2014-01-02 10:10:29",
+    "source_tld": "welcometo1dandmileyhouse.tumblr.com",
+    "embed_url": "https://giphy.com/embed/45cq3Gn0GH7k4",
+    "type": "gif",
+    "id": "45cq3Gn0GH7k4",
+    "url": "https://giphy.com/gifs/sad-crying-alone-45cq3Gn0GH7k4",
+    "images": {
+      "downsized_medium": {
+        "width": "355",
+        "size": "246429",
+        "height": "211",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.gif"
+      },
+      "fixed_height_still": {
+        "width": "336",
+        "height": "200",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200_s.gif"
+      },
+      "fixed_width_small": {
+        "width": "100",
+        "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100w.webp",
+        "webp_size": "9860",
+        "mp4_size": "20208",
+        "size": "25815",
+        "height": "59",
+        "mp4": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100w.mp4",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100w.gif"
+      },
+      "fixed_height_small": {
+        "width": "168",
+        "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100.webp",
+        "webp_size": "22486",
+        "mp4_size": "41209",
+        "size": "65701",
+        "height": "100",
+        "mp4": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100.mp4",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100.gif"
+      },
+      "fixed_width_downsampled": {
+        "width": "200",
+        "size": "91862",
+        "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w_d.webp",
+        "webp_size": "29386",
+        "height": "119",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w_d.gif"
+      },
+      "original_still": {
+        "width": "355",
+        "height": "211",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy_s.gif"
+      },
+      "fixed_width_small_still": {
+        "width": "100",
+        "height": "59",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100w_s.gif"
+      },
+      "fixed_width": {
+        "width": "200",
+        "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w.webp",
+        "webp_size": "29386",
+        "mp4_size": "8257",
+        "size": "25815",
+        "height": "119",
+        "mp4": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w.mp4",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w.gif"
+      },
+      "fixed_height_small_still": {
+        "width": "168",
+        "height": "100",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100_s.gif"
+      },
+      "fixed_height_downsampled": {
+        "width": "336",
+        "size": "226906",
+        "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200_d.webp",
+        "webp_size": "62080",
+        "height": "200",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200_d.gif"
+      },
+      "downsized_large": {
+        "width": "355",
+        "size": "246429",
+        "height": "211",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.gif"
+      },
+      "looping": {
+        "mp4": "https://media.giphy.com/media/45cq3Gn0GH7k4/giphy-loop.mp4"
+      },
+      "fixed_width_still": {
+        "width": "200",
+        "height": "119",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w_s.gif"
+      },
+      "original": {
+        "width": "355",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.gif",
+        "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.webp",
+        "mp4_size": "28720",
+        "webp_size": "66160",
+        "size": "246429",
+        "height": "211",
+        "mp4": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.mp4",
+        "frames": "5"
+      },
+      "downsized": {
+        "width": "355",
+        "size": "246429",
+        "height": "211",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.gif"
+      },
+      "fixed_height": {
+        "width": "336",
+        "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200.webp",
+        "webp_size": "62080",
+        "mp4_size": "7277",
+        "size": "65701",
+        "height": "200",
+        "mp4": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200.mp4",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200.gif"
+      },
+      "downsized_still": {
+        "width": "355",
+        "height": "211",
+        "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy_s.gif"
+      }
+    },
+    "username": "",
+    "source": "http://welcometo1dandmileyhouse.tumblr.com/post/71038654765/kocham-ci",
+    "source_post_url": "http://welcometo1dandmileyhouse.tumblr.com/post/71038654765/kocham-ci",
+    "bitly_gif_url": "http://gph.is/1cK14ir",
+    "content_url": "",
+    "trending_datetime": "1970-01-01 00:00:00"
+  },
+  "meta": {
+    "msg": "OK",
+    "status": 200
+  }
+}
+GGGGGG: data
+GGGGGG: meta
+THE JSON DATA PARSED: {
+  "slug": "sad-crying-alone-45cq3Gn0GH7k4",
+  "rating": "y",
+  "bitly_url": "http://gph.is/1cK14ir",
+  "import_datetime": "2014-01-02 10:10:29",
+  "source_tld": "welcometo1dandmileyhouse.tumblr.com",
+  "embed_url": "https://giphy.com/embed/45cq3Gn0GH7k4",
+  "type": "gif",
+  "id": "45cq3Gn0GH7k4",
+  "url": "https://giphy.com/gifs/sad-crying-alone-45cq3Gn0GH7k4",
+  "images": {
+    "downsized_medium": {
+      "width": "355",
+      "size": "246429",
+      "height": "211",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.gif"
+    },
+    "fixed_height_still": {
+      "width": "336",
+      "height": "200",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200_s.gif"
+    },
+    "fixed_width_small": {
+      "width": "100",
+      "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100w.webp",
+      "webp_size": "9860",
+      "mp4_size": "20208",
+      "size": "25815",
+      "height": "59",
+      "mp4": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100w.mp4",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100w.gif"
+    },
+    "fixed_height_small": {
+      "width": "168",
+      "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100.webp",
+      "webp_size": "22486",
+      "mp4_size": "41209",
+      "size": "65701",
+      "height": "100",
+      "mp4": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100.mp4",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100.gif"
+    },
+    "fixed_width_downsampled": {
+      "width": "200",
+      "size": "91862",
+      "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w_d.webp",
+      "webp_size": "29386",
+      "height": "119",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w_d.gif"
+    },
+    "original_still": {
+      "width": "355",
+      "height": "211",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy_s.gif"
+    },
+    "fixed_width_small_still": {
+      "width": "100",
+      "height": "59",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100w_s.gif"
+    },
+    "fixed_width": {
+      "width": "200",
+      "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w.webp",
+      "webp_size": "29386",
+      "mp4_size": "8257",
+      "size": "25815",
+      "height": "119",
+      "mp4": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w.mp4",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w.gif"
+    },
+    "fixed_height_small_still": {
+      "width": "168",
+      "height": "100",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/100_s.gif"
+    },
+    "fixed_height_downsampled": {
+      "width": "336",
+      "size": "226906",
+      "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200_d.webp",
+      "webp_size": "62080",
+      "height": "200",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200_d.gif"
+    },
+    "downsized_large": {
+      "width": "355",
+      "size": "246429",
+      "height": "211",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.gif"
+    },
+    "looping": {
+      "mp4": "https://media.giphy.com/media/45cq3Gn0GH7k4/giphy-loop.mp4"
+    },
+    "fixed_width_still": {
+      "width": "200",
+      "height": "119",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200w_s.gif"
+    },
+    "original": {
+      "width": "355",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.gif",
+      "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.webp",
+      "mp4_size": "28720",
+      "webp_size": "66160",
+      "size": "246429",
+      "height": "211",
+      "mp4": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.mp4",
+      "frames": "5"
+    },
+    "downsized": {
+      "width": "355",
+      "size": "246429",
+      "height": "211",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy.gif"
+    },
+    "fixed_height": {
+      "width": "336",
+      "webp": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200.webp",
+      "webp_size": "62080",
+      "mp4_size": "7277",
+      "size": "65701",
+      "height": "200",
+      "mp4": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200.mp4",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/200.gif"
+    },
+    "downsized_still": {
+      "width": "355",
+      "height": "211",
+      "url": "https://media2.giphy.com/media/45cq3Gn0GH7k4/giphy_s.gif"
+    }
+  },
+  "username": "",
+  "source": "http://welcometo1dandmileyhouse.tumblr.com/post/71038654765/kocham-ci",
+  "source_post_url": "http://welcometo1dandmileyhouse.tumblr.com/post/71038654765/kocham-ci",
+  "bitly_gif_url": "http://gph.is/1cK14ir",
+  "content_url": "",
+  "trending_datetime": "1970-01-01 00:00:00"
+}
+What we actually want: https://giphy.com/embed/45cq3Gn0GH7k4
+
