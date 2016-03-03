@@ -26,6 +26,8 @@ actor SlackListener
   let _client: Client
   var _subscribers: Array[SlackSubscriber tag]
 
+  let poll_period_seconds: U64 = 10
+
   new create(env: Env, subscriber: SlackSubscriber tag) =>
     _env = env
     _token = try _env.args(1) else "xoxp-16403402883-20720597988-23963616497-5d589467a3" end
@@ -43,12 +45,12 @@ actor SlackListener
 
     let timers = Timers
 
-    let listener = Timer(PollTimerNotify(this), 10000000000, 10000000000) // 10 seconds
+    let listener = Timer(PollTimerNotify(this), poll_period_seconds*1000000000, poll_period_seconds*1000000000) // 10 seconds
     timers(consume listener)
 
   be poll() =>
     try
-      let ts = Time.seconds() - 1
+      let ts: I64 = Time.seconds() - poll_period_seconds.i64()
       let s = "https://slack.com/api/channels.history?token=" + _token + "&channel=" + _channel + "&oldest=" + ts.string() + "&pretty=1"
       let url = URL.build(s)
       Fact(url.host.size() > 0)
@@ -63,6 +65,9 @@ actor SlackListener
     if response.status != 0 then
       var message: String = "Test message"
 
+      for chunk in response.body().values() do
+        _env.out.write(chunk)
+      end
       for subscriber in _subscribers.values() do
         subscriber.messageReceived(message)
       end
