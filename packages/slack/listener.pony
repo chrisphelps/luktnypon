@@ -4,7 +4,7 @@ use "json"
 use "net/http"
 use "net/ssl"
 use "time"
-use "../packages/jsonpath"
+use "../jsonpath"
 
 class PollTimerNotify is TimerNotify
   let _sender: SlackListener
