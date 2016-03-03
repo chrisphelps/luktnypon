@@ -9,10 +9,13 @@ actor Main
   new create(env: Env) =>
     _slackClient = SlackClient(env)
     _name = try env.args(1) else "Segmentation D Fault Esq" end
+    let command = try env.args(2) else "enc" end
 
-    for i in Range(2, env.args.size()) do
+    for i in Range(3, env.args.size()) do
       try
-        _slackClient.speak(_name, SoundEncoder.encode(env.args(i)))
+        match command
+          | "dec" => _slackClient.speak(_name, SoundEncoder.decode(env.args(i)))
+          | "enc" => _slackClient.speak(_name, SoundEncoder.encode(env.args(i)))
+        end
       end
     end
-
