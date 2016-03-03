@@ -15,6 +15,9 @@ work/
 output/
 
 # add specific entries for binaries
-helloworld
-counter
-
+helloworld/helloworld
+counter/counter
+actorslackcheck/actorslackcheck
+slackcheck/slackcheck
+baseneigh/baseneigh
+packages/encoders/encoders
