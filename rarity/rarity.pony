@@ -1,8 +1,10 @@
 use "assert"
 use "collections"
+use "json"
 use "net/http"
 use "net/ssl"
 use "time"
+use "../packages/jsonpath"
 
 class PollTimerNotify is TimerNotify
   let _sender: SlackListener
@@ -63,10 +65,24 @@ actor SlackListener
 
   be handleResponse(request: Payload val, response: Payload val) =>
     if response.status != 0 then
-      var message: String = "Test message"
+      var message: String = ""
 
+      var jsonResponse = ""
       for chunk in response.body().values() do
-        _env.out.write(chunk)
+        for i in Range(0, chunk.size()) do
+          try
+            let c = chunk(i)
+            let c2 = String.from_utf32(c.u32())
+            jsonResponse = jsonResponse + c2
+          end
+        end
+      end
+      let json: JsonDoc = JsonDoc
+      try
+        json.parse(jsonResponse)
+
+        let jp = JsonPath.obj("messages").arr(0).obj("text")
+        message = jp.string(json)
       end
       for subscriber in _subscribers.values() do
         subscriber.messageReceived(message)
