@@ -28,12 +28,12 @@ actor SlackListener
   let _client: Client
   var _subscribers: Array[SlackSubscriber tag]
 
-  let poll_period_seconds: U64 = 10
+  let poll_period_seconds: U64 = 2
 
   new create(env: Env, subscriber: SlackSubscriber tag) =>
     _env = env
-    _token = try _env.args(1) else "xoxp-16403402883-20720597988-23963616497-5d589467a3" end
-    _channel = try _env.args(2) else "C0PU3PR62" end
+    _token = "xoxp-16403402883-20720597988-23963616497-5d589467a3"
+    _channel = "C0PU3PR62"
     _subscribers = [subscriber]
 
     let sslctx = try
