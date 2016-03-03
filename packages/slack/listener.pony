@@ -84,8 +84,10 @@ actor SlackListener
         let jp = JsonPath.obj("messages").arr(0).obj("text")
         message = jp.string(json)
       end
-      for subscriber in _subscribers.values() do
-        subscriber.messageReceived(message)
+      if (message.size() > 0) then
+        for subscriber in _subscribers.values() do
+          subscriber.messageReceived(message)
+        end
       end
     else
       _env.out.print("Failed: " + request.method + " " + request.url.string())
